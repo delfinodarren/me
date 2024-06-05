@@ -19,14 +19,14 @@
         </header>
         <nav>
             <!-- Add links to each section -->
-            <a href="updates.html">Updates</a>
-            <a href="career.html">Career</a>
-            <a href="health.html">Health</a>
-            <a href="vision.html">Vision</a>
-            <a href="relationship.html">Relationship</a>
-            <a href="events.html">Events</a>
-            <a href="people.html">People</a>
-            <a href="contact.html">Contact & CV</a>
+            <a href="#" onclick="toggleSection('updates')">Updates</a>
+            <a href="#" onclick="toggleSection('career')">Career</a>
+            <a href="#" onclick="toggleSection('health')">Health</a>
+            <a href="#" onclick="toggleSection('vision')">Vision</a>
+            <a href="#" onclick="toggleSection('relationship')">Relationship</a>
+            <a href="#" onclick="toggleSection('events')">Events</a>
+            <a href="#" onclick="toggleSection('people')">People</a>
+            <a href="#" onclick="toggleSection('contact')">Contact & CV</a>
         </nav>
 
         <!-- Placeholder content for each section -->
@@ -66,5 +66,17 @@
             <p>&copy; 2024 Darren Delfino. All rights reserved.</p>
         </footer>
     </div>
+
+    <script>
+        // JavaScript function to toggle section visibility
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
